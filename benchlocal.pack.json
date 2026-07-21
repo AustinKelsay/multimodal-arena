@@ -5,7 +5,7 @@
   "id": "multimodal-arena",
   "name": "Multimodal Arena",
   "author": "finitecomputer",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Human-first side-by-side comparison of two models analyzing the same image, audio, or video input, with concurrency and streaming speed measurements.",
   "requirements": {
     "benchlocal": {
@@ -28,7 +28,7 @@
       "artifacts:write"
     ],
     "historyPlayback": true,
-    "buildId": "multimodal-arena-0.2.0",
+    "buildId": "multimodal-arena-0.2.1",
     "dataPolicy": {
       "mayUseRemoteServices": false,
       "remoteOrigins": [],

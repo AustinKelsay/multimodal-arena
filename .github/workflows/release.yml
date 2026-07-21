@@ -24,7 +24,7 @@ jobs:
       - name: Assemble standalone bundle
         run: |
           mkdir -p release/multimodal-arena
-          cp -R dist src test release/multimodal-arena/
+          cp -R dist fixtures src test release/multimodal-arena/
           cp benchlocal.pack.json index.html package.json package-lock.json README.md LICENSE release/multimodal-arena/
           cd release
           zip -qr "multimodal-arena-${GITHUB_REF_NAME}.zip" multimodal-arena
