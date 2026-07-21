@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "protocolVersion": 1,
+  "type": "web",
+  "id": "multimodal-arena",
+  "name": "Multimodal Arena",
+  "author": "finitecomputer",
+  "version": "0.2.0",
+  "description": "Human-first side-by-side comparison of two models analyzing the same image, audio, or video input, with concurrency and streaming speed measurements.",
+  "requirements": {
+    "benchlocal": {
+      "minVersion": "0.3.0"
+    }
+  },
+  "entry": "http://127.0.0.1:5176/",
+  "web": {
+    "bridgeVersion": 1,
+    "allowedOrigins": [
+      "http://127.0.0.1:5176"
+    ],
+    "permissions": [
+      "models:list",
+      "models:read",
+      "inference:stream",
+      "runs:write",
+      "history:read",
+      "history:write",
+      "artifacts:write"
+    ],
+    "historyPlayback": true,
+    "buildId": "multimodal-arena-0.2.0",
+    "dataPolicy": {
+      "mayUseRemoteServices": false,
+      "remoteOrigins": [],
+      "sendsModelOutputs": false,
+      "sendsRunMetadata": false,
+      "description": "Media inputs and model outputs pass through the local BenchLocal bridge and are saved only in local BenchLocal history. Provider credentials remain in BenchLocal."
+    }
+  },
+  "capabilities": {
+    "tools": false,
+    "multiTurn": false,
+    "streamingProgress": true,
+    "verification": false
+  }
+}
